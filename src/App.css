@@ -1,0 +1,141 @@
+:root{
+  --magent: #09CAC7;
+  --light-blue: #CCECF2;
+  --darkest-blue: #012333;
+  --dark-blue: #002A3E;
+  --blue: #003047;
+  --green-blue: #024A59;
+}
+
+.App {
+  text-align: center;
+  background: var(--darkest-blue);
+  font-family: 'Roboto' !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.width-60{
+  width: 60%;
+}
+
+.preconfig-container, .config-container{
+  background: var(--darkest-blue);
+  display: flex;
+  min-height: 100svh;
+  align-items: center;
+  justify-content: center;
+}
+
+.preconfig-container .title{
+  color: var(--light-blue);
+  font-weight: 600;
+}
+.preconfig-container .subtitle{
+  color: white;
+  margin-bottom: 25px;
+  font-weight: 200;
+}
+
+.drag-and-drop{
+  background: var(--blue);
+  border-radius: 20px;
+  border: 10px dashed var(--magent);
+  padding: 50px;
+  color: white;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.drag-and-drop .hidden{
+  visibility: hidden;
+}
+
+.primary-button{
+  color: var(--dark-blue);
+  background: var(--magent);
+  border-radius: 10px;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 15px 30px;
+  margin: auto;
+  font-weight: 600;
+}
+.primary-button:hover{
+  background: #0adeda;
+}
+
+.bottom-section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.bottom-section .info-section{
+  background: var(--blue);
+  color: white;
+  width: 75%;
+  border-radius: 10px;
+  border: 1px solid var(--magent);
+  padding: 20px;
+  font-size: 25px;
+}
+
+.bottom-section .info-section .info-title{
+  text-align: left;
+  font-size: 18px;
+}
+
+.bottom-section .info-section .info-bullets{
+  text-align: left;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.bottom-section .button-section{
+  width: 25%;  
+}
+
+.bottom-section .button-section button{
+  height: 100%;
+  width: 90%;
+  margin-left: 10%;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
